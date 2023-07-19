@@ -119,6 +119,7 @@ router.put('/:id', (req, res) => {
 
 router.delete('/:id', async (req, res) => {
   // delete one product by its `id` value
+  try {
   const productData = Product.destroy({
     where: [
       {
@@ -132,6 +133,12 @@ router.delete('/:id', async (req, res) => {
       message:'No product with matching id.'
     })
     return;
+  }
+  //return 200 status and json object 
+  res.status(200).json('Product deleted.');
+  } catch (err) {
+    //if error send 500 and err 
+    res.status(500).json(err);
   }
 });
 
