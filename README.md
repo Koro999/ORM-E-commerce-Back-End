@@ -19,7 +19,7 @@ You will require NODE.
 
 Example of the backend working.
 
-https://drive.google.com/file/d/1ZqNFPomaeuZ67wuf-aGu6YNxSG_BVJ92/preview/
+https://drive.google.com/file/d/1ZqNFPomaeuZ67wuf-aGu6YNxSG_BVJ92/view
 
 
 ## Credits
